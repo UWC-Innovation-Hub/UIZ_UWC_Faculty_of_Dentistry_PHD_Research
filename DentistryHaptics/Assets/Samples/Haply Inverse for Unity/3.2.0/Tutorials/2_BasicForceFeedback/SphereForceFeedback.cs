@@ -5,6 +5,8 @@
 using Haply.Inverse.DeviceControllers;
 using Haply.Inverse.DeviceData;
 using UnityEngine;
+using System;
+using UnityEngine.UI;
 
 namespace Haply.Samples.Tutorials._2_BasicForceFeedback
 {
@@ -22,6 +24,11 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
         private Vector3 _ballPosition;
         private float _ballRadius;
         private float _cursorRadius;
+
+        private Vector3 force;
+
+        [SerializeField]
+        private Text _text;
 
         /// <summary>
         /// Stores the cursor and sphere transform data for access by the haptic thread.
@@ -103,10 +110,16 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
         {
             var inverse3 = args.DeviceController;
             // Calculate the ball force
-            var force = ForceCalculation(inverse3.CursorLocalPosition, inverse3.CursorLocalVelocity,
+            force = ForceCalculation(inverse3.CursorLocalPosition, inverse3.CursorLocalVelocity,
                 _cursorRadius, _ballPosition, _ballRadius);
 
             inverse3.SetCursorLocalForce(force);
+        }
+
+        private void FixedUpdate()
+        {
+            _text.text = $"Force (N): {force.magnitude:F2}";
+            //Debug.Log($"Force (N): {force.magnitude:F2}");
         }
     }
 }
