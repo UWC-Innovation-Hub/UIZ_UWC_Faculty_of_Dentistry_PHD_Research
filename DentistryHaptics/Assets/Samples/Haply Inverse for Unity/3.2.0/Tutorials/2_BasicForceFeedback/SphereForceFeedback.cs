@@ -12,7 +12,8 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
 {
     public class SphereForceFeedback : MonoBehaviour
     {
-        public Inverse3Controller inverse3;
+        public Inverse3Controller inverse3Right;
+        public Inverse3Controller inverse3Left;
 
         [Range(0, 800)]
         // Stiffness of the force feedback.
@@ -23,9 +24,11 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
 
         private Vector3 _ballPosition;
         private float _ballRadius;
-        private float _cursorRadius;
+        private float _cursorRadiusRight;
+        private float _cursorRadiusLeft;
 
-        private Vector3 force;
+        private Vector3 forceRight;
+        private Vector3 forceLeft;
 
         [SerializeField]
         private Text _text;
@@ -39,7 +42,8 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
             _ballPosition = t.position;
             _ballRadius = t.lossyScale.x / 2f;
 
-            _cursorRadius = inverse3.Cursor.Radius;
+            _cursorRadiusRight = inverse3Right.Cursor.Radius;
+            _cursorRadiusLeft = inverse3Left.Cursor.Radius;
         }
 
         /// <summary>
@@ -47,8 +51,10 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
         /// </summary>
         private void Awake()
         {
-            inverse3 ??= FindFirstObjectByType<Inverse3Controller>();
-            inverse3.Ready.AddListener((device, args) => SaveSceneData());
+            inverse3Right ??= FindFirstObjectByType<Inverse3Controller>();
+            inverse3Left ??= FindFirstObjectByType<Inverse3Controller>();
+            inverse3Right.Ready.AddListener((inverse3Right, args) => SaveSceneData());
+            inverse3Left.Ready.AddListener((inverse3Left, args) => SaveSceneData());
         }
 
         /// <summary>
@@ -56,7 +62,8 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
         /// </summary>
         private void OnEnable()
         {
-            inverse3.DeviceStateChanged += OnDeviceStateChanged;
+            inverse3Right.DeviceStateChanged += OnDeviceStateChangedRight;
+            inverse3Left.DeviceStateChanged += OnDeviceStateChangedLeft;    
         }
 
         /// <summary>
@@ -64,8 +71,10 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
         /// </summary>
         private void OnDisable()
         {
-            inverse3.DeviceStateChanged -= OnDeviceStateChanged;
-            inverse3.Release();
+            inverse3Right.DeviceStateChanged -= OnDeviceStateChangedRight;
+            inverse3Right.Release();
+            inverse3Left.DeviceStateChanged -= OnDeviceStateChangedLeft;    
+            inverse3Left.Release();
         }
 
         /// <summary>
@@ -106,19 +115,31 @@ namespace Haply.Samples.Tutorials._2_BasicForceFeedback
         /// </summary>
         /// <param name="sender">The Inverse3 data object.</param>
         /// <param name="args">The event arguments containing the device data.</param>
-        private void OnDeviceStateChanged(object sender, Inverse3EventArgs args)
+        private void OnDeviceStateChangedRight(object sender, Inverse3EventArgs args)
         {
             var inverse3 = args.DeviceController;
             // Calculate the ball force
-            force = ForceCalculation(inverse3.CursorLocalPosition, inverse3.CursorLocalVelocity,
-                _cursorRadius, _ballPosition, _ballRadius);
+            forceRight = ForceCalculation(inverse3.CursorLocalPosition, inverse3.CursorLocalVelocity,
+                _cursorRadiusRight, _ballPosition, _ballRadius);
 
-            inverse3.SetCursorLocalForce(force);
+            inverse3.SetCursorLocalForce(forceRight);
+
+        }
+
+        private void OnDeviceStateChangedLeft(object sender, Inverse3EventArgs args)
+        {
+            var inverse3 = args.DeviceController;
+            // Calculate the ball force
+            forceLeft = ForceCalculation(inverse3.CursorLocalPosition, inverse3.CursorLocalVelocity,
+                _cursorRadiusLeft, _ballPosition, _ballRadius);
+
+            inverse3.SetCursorLocalForce(forceLeft);
+
         }
 
         private void FixedUpdate()
         {
-            _text.text = $"Force (N): {force.magnitude:F2}";
+            _text.text = $"Force (N): {forceRight.magnitude:F2}";
             //Debug.Log($"Force (N): {force.magnitude:F2}");
         }
     }
