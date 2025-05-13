@@ -33,7 +33,6 @@ namespace Haply.Samples.Tutorials._4B_DynamicForceLeftRight
         // Reference to the Inverse3 devices.
         private Inverse3Controller[] inverse3s;
 
-        [SerializeField] private Text _rightText;
         [SerializeField] private Text _leftText;
 
         private Vector3 _force;
@@ -221,8 +220,7 @@ namespace Haply.Samples.Tutorials._4B_DynamicForceLeftRight
 
         private void FixedUpdate()
         {
-            _leftText.text = $"Left force: {_force.magnitude:f2}";
-            //_rightText.text = $"Right force: {_force.magnitude:f2}";
+            _leftText.text = $"Force (N): {_force.magnitude:f2}";
         }
     }
 } // namespace Haply.Samples.DynamicObjectForceLeftRight
