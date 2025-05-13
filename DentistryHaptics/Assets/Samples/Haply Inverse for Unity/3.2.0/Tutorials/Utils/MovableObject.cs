@@ -62,7 +62,7 @@ namespace Haply.Samples.Tutorials.Utils
 
         private void Update()
         {
-            HandleInput();
+            //HandleInput();
         }
 
         private void FixedUpdate()
