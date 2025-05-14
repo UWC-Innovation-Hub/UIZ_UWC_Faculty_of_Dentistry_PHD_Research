@@ -1,0 +1,19 @@
+ScanId: 3097
+Tag: gauze_1
+Scan Name: gauze_1_1-16-2023_4:23:14_PM
+Part: 
+# Background color hues range 0-180. 0 = Red, 60 = Green, 120 = Blue
+Background Color: 50
+Size: Large
+Date Created: 1/16/2023 4:23:14 PM
+Date Scanned: 1/16/2023 4:23:29 PM
+Date Processed: 1/16/2023 4:27:58 PM
+Date Reviewed: 1/16/2023 4:36:40 PM
+Client: umbc
+Project: 
+Operator: 
+Notes: 
+1/16/2023 4:33:27 PM Processing agi processing complete in 4:58.52 on PASS-01-PROC
+1/16/2023 4:28:28 PM Processing making masks complete in 0:30.22
+1/16/2023 4:26:15 PM Scanning Finished Scanning on PASS-01-OP in 2:36.18
+1/16/2023 4:23:14 PM New Part 
