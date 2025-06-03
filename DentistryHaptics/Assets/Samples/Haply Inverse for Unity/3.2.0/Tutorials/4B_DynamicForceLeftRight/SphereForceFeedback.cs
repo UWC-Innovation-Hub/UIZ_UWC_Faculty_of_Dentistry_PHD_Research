@@ -7,6 +7,7 @@ using Haply.Inverse.DeviceControllers;
 using Haply.Inverse.DeviceData;
 using Haply.Samples.Tutorials.Utils;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Haply.Samples.Tutorials._4B_DynamicForceLeftRight
 {
@@ -31,6 +32,10 @@ namespace Haply.Samples.Tutorials._4B_DynamicForceLeftRight
 
         // Reference to the Inverse3 devices.
         private Inverse3Controller[] inverse3s;
+
+        [SerializeField] private Text _leftText;
+
+        private Vector3 _force;
 
         #region Thread-safe cached data
 
@@ -197,20 +202,25 @@ namespace Haply.Samples.Tutorials._4B_DynamicForceLeftRight
 
             // Calculate the force exerted by the moving ball. Using 'device.Position' instead of 'device.LocalPosition'
             // ensures the force calculation considers the device's offset and rotation in world space.
-            var force = ForceCalculation(inverse3.CursorPosition, inverse3.CursorVelocity, sceneData.cursorRadii[index],
+            _force = ForceCalculation(inverse3.CursorPosition, inverse3.CursorVelocity, sceneData.cursorRadii[index],
                 sceneData.ballPosition, sceneData.ballVelocity, sceneData.ballRadius);
 
             // Add the other cursor force if more than one device
             if (cursorProvidesHapticsToEachOther && index != otherIndex)
             {
-                force += ForceCalculation(inverse3.CursorPosition, inverse3.CursorVelocity, sceneData.cursorRadii[index],
+                _force += ForceCalculation(inverse3.CursorPosition, inverse3.CursorVelocity, sceneData.cursorRadii[index],
                     inverse3s[otherIndex].CursorPosition, inverse3s[otherIndex].CursorVelocity, sceneData.cursorRadii[otherIndex]);
             }
 
             // Apply the calculated force to the cursor. Using 'device.CursorSetForce' instead of
             // 'device.CursorSetLocalForce' ensures that the force vector is correctly converted
             // from world space to the device's local space.
-            inverse3.SetCursorForce(force);
+            inverse3.SetCursorForce(_force);
+        }
+
+        private void FixedUpdate()
+        {
+            _leftText.text = $"Force (N): {_force.magnitude:f2}";
         }
     }
 } // namespace Haply.Samples.DynamicObjectForceLeftRight
