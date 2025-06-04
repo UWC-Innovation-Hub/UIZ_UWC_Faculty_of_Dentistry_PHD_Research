@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 45097444}
   m_Layer: 0
-  m_Name: '======Haply====== '
+  m_Name: ---------Haply---------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -906,7 +906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404225624}
   m_Layer: 0
-  m_Name: ======XR========
+  m_Name: ---------XR------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2068,7 +2068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1617717262}
   m_Layer: 0
-  m_Name: ====Environemnt===
+  m_Name: ---------Environemnt--
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
