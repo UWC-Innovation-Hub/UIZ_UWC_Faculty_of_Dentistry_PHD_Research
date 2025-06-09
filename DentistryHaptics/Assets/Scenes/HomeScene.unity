@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 218000007}
   - component: {fileID: 218000006}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1419,7 +1419,7 @@ GameObject:
   - component: {fileID: 388535229}
   - component: {fileID: 388535228}
   m_Layer: 5
-  m_Name: ButtonResults
+  m_Name: ResultsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 594146933}
   - component: {fileID: 594146932}
   m_Layer: 5
-  m_Name: ButtonStartSimulation
+  m_Name: StartSimulationButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2639,7 +2639,7 @@ GameObject:
   - component: {fileID: 751109608}
   - component: {fileID: 751109607}
   m_Layer: 5
-  m_Name: CanvasMainMenu
+  m_Name: MainMenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2972,7 +2972,7 @@ GameObject:
   - component: {fileID: 858277927}
   - component: {fileID: 858277926}
   m_Layer: 5
-  m_Name: TextLogin
+  m_Name: LoginText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4011,7 +4011,7 @@ GameObject:
   - component: {fileID: 1670122576}
   - component: {fileID: 1670122575}
   m_Layer: 5
-  m_Name: ButtonUserLogin
+  m_Name: UserLoginButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
