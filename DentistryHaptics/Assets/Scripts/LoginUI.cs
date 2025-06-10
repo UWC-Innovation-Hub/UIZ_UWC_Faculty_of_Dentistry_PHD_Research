@@ -4,11 +4,10 @@ using UnityEngine;
 public class LoginUI : MonoBehaviour
 {
     // Event to activate Main Canvas Group UI
-    private event EventHandler OnLogin;
+    public event EventHandler<GameObject> OnLogin;
     
     public void Login()
     {
-        OnLogin?.Invoke(this, EventArgs.Empty);
-        gameObject.SetActive(false);
+        OnLogin?.Invoke(null, this.gameObject);
     }
 }
