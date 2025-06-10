@@ -8,6 +8,6 @@ public class LoginUI : MonoBehaviour
     
     public void Login()
     {
-        OnLogin?.Invoke(null, this.gameObject);
+        OnLogin?.Invoke(this, gameObject);
     }
 }
