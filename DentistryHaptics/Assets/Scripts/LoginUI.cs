@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class LoginUI : MonoBehaviour
 {
-    // Event to activate Main Canvas Group UI
-    public event EventHandler<GameObject> OnLogin;
-    
-    public void Login()
+    [Header("Event Channel")]
+    [SerializeField] private HomeSceneUIEventChannelSO homeSceneUIEventChannelSO;
+
+    public void OnLoginButtonPressed()
     {
-        OnLogin?.Invoke(this, gameObject);
+        homeSceneUIEventChannelSO.RaiseEvent(gameObject);
     }
 }

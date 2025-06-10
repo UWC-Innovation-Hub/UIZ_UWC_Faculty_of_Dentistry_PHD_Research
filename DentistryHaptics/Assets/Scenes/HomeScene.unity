@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e861494da5e3f847bbbb3dcf21f0423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoginUI: {fileID: 486558552}
+  homeSceneUIEventChannelSO: {fileID: 11400000, guid: 859b73e86dd388440ac6f56fe24eb450, type: 2}
 --- !u!1 &45074636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec394fee4ac0bf4bb07c0cbdee59767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  homeSceneUIEventChannelSO: {fileID: 11400000, guid: 859b73e86dd388440ac6f56fe24eb450, type: 2}
 --- !u!1 &525933578
 GameObject:
   m_ObjectHideFlags: 0

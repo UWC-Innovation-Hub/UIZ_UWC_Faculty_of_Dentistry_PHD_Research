@@ -1,30 +1,23 @@
+using System;
 using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] private LoginUI LoginUI;
+    [Header("Event Channel")]
+    [SerializeField] private HomeSceneUIEventChannelSO homeSceneUIEventChannelSO;
 
     private void OnEnable()
     {
-        if (LoginUI == null)
-        {
-            Debug.LogError("Login UI reference is null in UIController!", this);
-            return;
-        }
-        LoginUI.OnLogin += OnLoginButtonPressed;
+        homeSceneUIEventChannelSO.OnLoginEventRaised += OnLoginEventReceived;
     }
 
     private void OnDisable()
     {
-        if (LoginUI != null)
-            LoginUI.OnLogin -= OnLoginButtonPressed;
+        homeSceneUIEventChannelSO.OnLoginEventRaised -= OnLoginEventReceived;
     }
 
-    private void OnLoginButtonPressed(object sender, GameObject loginUIGameObject)
+    private void OnLoginEventReceived(GameObject loginUIGameObject)
     {
-        if (loginUIGameObject != null)
-            return;
-        
         loginUIGameObject.SetActive(false);
     }
 }
