@@ -4,12 +4,14 @@ using UnityEngine;
 public class FadeScreen : MonoBehaviour
 {
     [SerializeField] private bool fadeOnStart = true;
-    public float fadeDuration = 2;
     [SerializeField] private Color fadeColor;
+
     private new Renderer renderer;
 
-    private float alphaIn = 1;
-    private float alphaOut = 0;
+    public float fadeDuration = 2;
+
+    private readonly float alphaIn = 1;
+    private readonly float alphaOut = 0;
 
     private void Start()
     {

@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UserDetailsUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private SceneTransitionManager transitionManager;
+
+    private int sceneIndex;
+
+    private void Start()
     {
-        
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+    }
+    public void SignOut()
+    {
+        transitionManager.GoToScene(sceneIndex - 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitApplication()
     {
-        
+        Application.Quit();
     }
 }
