@@ -3,11 +3,9 @@ using UnityEngine;
 
 public class LoginUI : MonoBehaviour
 {
-    [Header("Event Channel")]
-    [SerializeField] private HomeSceneUIEventChannelSO homeSceneUIEventChannelSO;
-
-    public void OnLoginButtonPressed()
+    public event Action OnLogin; 
+    public void Login()
     {
-        homeSceneUIEventChannelSO.RaiseEvent(gameObject);
+        OnLogin?.Invoke();
     }
 }

@@ -1850,6 +1850,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 421521187}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &421521189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3633334384152583673, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 421521187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5835d1b29e64b2f46ad8dbf26c18be6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &421521192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5290,6 +5301,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735561511}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1751894903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1751894905}
+  - component: {fileID: 1751894904}
+  m_Layer: 0
+  m_Name: SceneTransitionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1751894904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751894903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd0e6fa583ff0d4bb822c37598fafd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeScreen: {fileID: 421521189}
+--- !u!4 &1751894905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751894903}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1762277718
 GameObject:
   m_ObjectHideFlags: 0
@@ -6528,6 +6584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Login UI
       objectReference: {fileID: 0}
+    - target: {fileID: 2229512305387356774, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2626222456494928620, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6648,6 +6708,7 @@ SceneRoots:
   - {fileID: 818238543244609944}
   - {fileID: 4439475351635695997}
   - {fileID: 1383715969483071368}
+  - {fileID: 1751894905}
   - {fileID: 384873780}
   - {fileID: 1799224604}
   - {fileID: 614942192}
