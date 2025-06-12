@@ -530,7 +530,8 @@ GameObject:
   - component: {fileID: 109538296}
   - component: {fileID: 109538295}
   - component: {fileID: 109538294}
-  m_Layer: 0
+  - component: {fileID: 109538297}
+  m_Layer: 5
   m_Name: ResultsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,6 +621,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &109538297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109538292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &126013679
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +720,7 @@ GameObject:
   - component: {fileID: 153103825}
   - component: {fileID: 153103827}
   - component: {fileID: 153103826}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResultsDetailsText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +983,7 @@ GameObject:
   - component: {fileID: 203900928}
   - component: {fileID: 203900927}
   - component: {fileID: 203900926}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SignOutButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,10 +1054,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1043160640}
-        m_TargetAssemblyTypeName: UserDetailsUI, Assembly-CSharp
-        m_MethodName: SignOut
-        m_Mode: 1
+      - m_Target: {fileID: 1751894904}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2141,7 +2161,7 @@ GameObject:
   - component: {fileID: 581918520}
   - component: {fileID: 581918522}
   - component: {fileID: 581918521}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3043,7 +3063,7 @@ GameObject:
   - component: {fileID: 822808872}
   - component: {fileID: 822808874}
   - component: {fileID: 822808873}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResultsTitleText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3838,7 +3858,7 @@ GameObject:
   - component: {fileID: 1340374237}
   - component: {fileID: 1340374239}
   - component: {fileID: 1340374238}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UserNameText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4178,7 +4198,7 @@ GameObject:
   - component: {fileID: 1497349539}
   - component: {fileID: 1497349541}
   - component: {fileID: 1497349540}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4256,7 +4276,7 @@ GameObject:
   - component: {fileID: 1535562783}
   - component: {fileID: 1535562782}
   - component: {fileID: 1535562781}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4389,7 +4409,8 @@ GameObject:
   - component: {fileID: 1560401585}
   - component: {fileID: 1560401584}
   - component: {fileID: 1560401583}
-  m_Layer: 0
+  - component: {fileID: 1560401586}
+  m_Layer: 5
   m_Name: UserDetailsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4479,6 +4500,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1560401586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560401581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &1613739274
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,7 +4608,7 @@ GameObject:
   - component: {fileID: 1641306767}
   - component: {fileID: 1641306769}
   - component: {fileID: 1641306768}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5957,7 +5997,7 @@ GameObject:
   - component: {fileID: 1970357268}
   - component: {fileID: 1970357270}
   - component: {fileID: 1970357269}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

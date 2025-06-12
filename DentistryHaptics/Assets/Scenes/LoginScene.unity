@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &112330474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4684842069680478723, guid: 160f7c1cbe567c84ea81df4b0bf498ca, type: 3}
+  m_PrefabInstance: {fileID: 9198324605549709114}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd0e6fa583ff0d4bb822c37598fafd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &205854377
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,13 +382,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Login UI
       objectReference: {fileID: 0}
-    - target: {fileID: 2229512305387356774, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 3853485538785432239, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3853485538785432239, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 112330474}
+    - target: {fileID: 3853485538785432239, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Login
+      value: GoToScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853485538785432239, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneTransitionManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853485538785432239, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7705081059585233528, guid: 92d6dba90ea398f46ad4e6822ed86cc9, type: 3}
       propertyPath: m_LocalPosition.x

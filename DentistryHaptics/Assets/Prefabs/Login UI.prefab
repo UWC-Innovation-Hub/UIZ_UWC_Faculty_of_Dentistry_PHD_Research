@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4536991830806115091}
   - component: {fileID: 2747436437125205895}
   - component: {fileID: 485556257108796856}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 7153848031766635196}
   - component: {fileID: 2852191670815443693}
   - component: {fileID: 6144899866524426185}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PasswordInputField (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 6401157607310137077}
   - component: {fileID: 3330621565248067262}
   - component: {fileID: 4516230793292039140}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LoginTitleText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3911535950075143919}
   - component: {fileID: 2395039471054449363}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3629653377014340649}
   - component: {fileID: 7166996924825599239}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 3974279170091254066}
   - component: {fileID: 3890252307611224310}
   - component: {fileID: 5596506107723833265}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UsernameInputField (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -757,14 +757,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2229512305387356774}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.3826834, z: 0, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -1, y: 1.5, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8969089765743785957}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!114 &1895635309735095704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,7 +777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec394fee4ac0bf4bb07c0cbdee59767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  homeSceneUIEventChannelSO: {fileID: 11400000, guid: 859b73e86dd388440ac6f56fe24eb450, type: 2}
 --- !u!1 &3403744936576622479
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,7 +788,7 @@ GameObject:
   - component: {fileID: 4891296217342641938}
   - component: {fileID: 6819559469847076360}
   - component: {fileID: 411365530741482102}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +925,7 @@ GameObject:
   - component: {fileID: 7461496001856538646}
   - component: {fileID: 6085243387547326788}
   - component: {fileID: 3853485538785432239}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LoginButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1036,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1895635309735095704}
         m_TargetAssemblyTypeName: LoginUI, Assembly-CSharp
-        m_MethodName: OnLoginButtonPressed
+        m_MethodName: Login
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1058,7 +1057,7 @@ GameObject:
   - component: {fileID: 6343955822916195072}
   - component: {fileID: 1356237794770389719}
   - component: {fileID: 4516667938179092873}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,7 +1194,8 @@ GameObject:
   - component: {fileID: 2626222456494928620}
   - component: {fileID: 6058582302228655417}
   - component: {fileID: 4265492685957421223}
-  m_Layer: 0
+  - component: {fileID: 3612007432852123894}
+  m_Layer: 5
   m_Name: LoginCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1285,6 +1285,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3612007432852123894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5298793589695540009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &6407050982778337292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,7 +1316,7 @@ GameObject:
   - component: {fileID: 3000326909864395213}
   - component: {fileID: 3288317141640323919}
   - component: {fileID: 1420703223932054684}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1472,7 @@ GameObject:
   - component: {fileID: 3850991254565609421}
   - component: {fileID: 8867014413185611242}
   - component: {fileID: 2467020487547504429}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1552,7 @@ GameObject:
   - component: {fileID: 1884269487898304407}
   - component: {fileID: 7483114588404403159}
   - component: {fileID: 1100545769600450387}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
