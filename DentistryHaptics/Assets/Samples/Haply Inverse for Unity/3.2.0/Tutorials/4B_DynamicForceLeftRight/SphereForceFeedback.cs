@@ -33,8 +33,6 @@ namespace Haply.Samples.Tutorials._4B_DynamicForceLeftRight
         // Reference to the Inverse3 devices.
         private Inverse3Controller[] inverse3s;
 
-        [SerializeField] private Text _leftText;
-
         private Vector3 _force;
 
         #region Thread-safe cached data
@@ -216,11 +214,6 @@ namespace Haply.Samples.Tutorials._4B_DynamicForceLeftRight
             // 'device.CursorSetLocalForce' ensures that the force vector is correctly converted
             // from world space to the device's local space.
             inverse3.SetCursorForce(_force);
-        }
-
-        private void FixedUpdate()
-        {
-            _leftText.text = $"Force (N): {_force.magnitude:f2}";
         }
     }
 } // namespace Haply.Samples.DynamicObjectForceLeftRight
