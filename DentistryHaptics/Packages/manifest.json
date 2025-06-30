@@ -2,6 +2,7 @@
   "dependencies": {
     "co.haply.inverse": "3.2.0",
     "com.ultraleap.tracking": "7.2.0",
+    "com.ultraleap.tracking.preview": "7.2.0",
     "com.unity.collab-proxy": "2.8.1",
     "com.unity.feature.development": "1.0.2",
     "com.unity.inputsystem": "1.14.0",
