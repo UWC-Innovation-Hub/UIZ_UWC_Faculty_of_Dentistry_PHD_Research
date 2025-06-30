@@ -9,6 +9,18 @@
       },
       "url": "https://unitypackages.haply.co"
     },
+    "com.unity.asset-manager-for-unity": {
+      "version": "1.5.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.settings-manager": "2.0.1",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.burst": {
       "version": "1.8.21",
       "depth": 2,
@@ -119,6 +131,13 @@
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
       "depth": 3,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

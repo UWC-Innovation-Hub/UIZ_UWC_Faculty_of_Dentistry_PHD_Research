@@ -994,10 +994,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 442e45d3-1ac8-48c1-89ef-91ef41ddf5f8
+  cloudProjectId: 3063b334-91a2-4003-ad7c-da8094603d29
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: UIZ UWC Faculty of Dentistry PHD_Research
+  projectName: DentistryHaptics
   organizationId: studio_uih
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
