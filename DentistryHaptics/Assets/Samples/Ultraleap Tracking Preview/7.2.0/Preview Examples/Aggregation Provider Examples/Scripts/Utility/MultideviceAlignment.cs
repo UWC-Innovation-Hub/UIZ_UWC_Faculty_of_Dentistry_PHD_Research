@@ -20,7 +20,8 @@ namespace Leap
     public class MultideviceAlignment : MonoBehaviour
     {
         public LeapProvider sourceDevice;
-        public LeapProvider targetDevice;
+        // public LeapProvider targetDevice;
+        public LeapProvider[] targetDevices;
 
         [Tooltip("The maximum variance in bone positions allowed to consider the provider aligned. (in metres)")]
         public float alignmentVariance = 0.02f;
@@ -28,19 +29,20 @@ namespace Leap
         List<Vector3> sourceHandPoints = new List<Vector3>();
         List<Vector3> targetHandPoints = new List<Vector3>();
 
-        bool positioningComplete = false;
+        // bool positioningComplete = false;
 
         KabschSolver solver = new KabschSolver();
 
         public void ReAlignProvider()
         {
-            targetDevice.transform.position = Vector3.zero;
-            positioningComplete = false;
+            foreach (LeapProvider targetDevice in targetDevices)
+                targetDevice.transform.position = Vector3.zero;
+            // positioningComplete = false;
         }
 
         void Update()
         {
-            if (!positioningComplete)
+            foreach (LeapProvider targetDevice in targetDevices)
             {
                 foreach (var sourceHand in sourceDevice.CurrentFrame.Hands)
                 {
@@ -57,26 +59,18 @@ namespace Leap
                             }
                         }
 
-                        // This is temporary while we check if any of the hands points are not close enough to eachother
-                        positioningComplete = true;
-
-                        for (int i = 0; i < sourceHandPoints.Count; i++)
+                        /*for (int i = 0; i < sourceHandPoints.Count; i++)
                         {
                             if (Vector3.Distance(sourceHandPoints[i], targetHandPoints[i]) > alignmentVariance)
                             {
                                 // we are already as aligned as we need to be, we can exit the alignment stage
-                                positioningComplete = false;
+                                //positioningComplete = false;
                                 break;
                             }
-                        }
-
-                        if (positioningComplete)
-                        {
-                            return;
-                        }
+                        }*/
 
                         Matrix4x4 deviceToOriginDeviceMatrix =
-                          solver.SolveKabsch(targetHandPoints, sourceHandPoints, 200);
+                            solver.SolveKabsch(targetHandPoints, sourceHandPoints, 200);
 
                         // transform the targetDevice.transform by the deviceToOriginDeviceMatrix
                         Matrix4x4 newTransform = deviceToOriginDeviceMatrix * targetDevice.transform.localToWorldMatrix;
@@ -87,7 +81,7 @@ namespace Leap
 
                         targetHandPoints.Clear();
                         sourceHandPoints.Clear();
-                        return;
+                        //return;
                     }
                 }
             }
