@@ -337,6 +337,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "org.artoolkitx.artoolkitx-unity": {
+      "version": "https://github.com/artoolkitx/arunityx.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a39956fcfa3d47e2df393da59e9082df40d8fe7c"
+    },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
