@@ -914,6 +914,423 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218000004}
   m_CullTransparentMesh: 1
+--- !u!1 &287483925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287483929}
+  - component: {fileID: 287483928}
+  - component: {fileID: 287483927}
+  - component: {fileID: 287483926}
+  m_Layer: 0
+  m_Name: ARToolkit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &287483926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287483925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aabcb9e1b2834681b717ff03624a181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arcontroller: {fileID: 287483927}
+  configs:
+  - platform: 7
+    name: Windows (Editor)
+    defaultModule: 7
+    module: 7
+    inputSelectionMethod: 1
+    position: 0
+    index: 2
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: -module=WinMF -uid=\\?\usb#vid_6993&pid_b04e&mi_00 -width=1280
+      -height=720
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 0
+    name: mac OS (Editor)
+    defaultModule: 5
+    module: 5
+    inputSelectionMethod: 4
+    position: 8
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 0
+    height: 0
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 2
+    name: Windows (Player)
+    defaultModule: 7
+    module: 7
+    inputSelectionMethod: 1
+    position: 0
+    index: 2
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: -module=WinMF -uid=\\?\usb#vid_6993&pid_b04e&mi_00 -width=1280
+      -height=720
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 1
+    name: mac OS (Player)
+    defaultModule: 5
+    module: 5
+    inputSelectionMethod: 0
+    position: 8
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 0
+    height: 0
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 11
+    name: Android
+    defaultModule: 6
+    module: 6
+    inputSelectionMethod: 0
+    position: 16
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 1280
+    height: 720
+    AVFoundationPreset: 0
+    sizePreference: 3
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 8
+    name: iOS
+    defaultModule: 5
+    module: 5
+    inputSelectionMethod: 0
+    position: 16
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 0
+    height: 0
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 13
+    name: Linux (Player)
+    defaultModule: 2
+    module: 2
+    inputSelectionMethod: 0
+    position: 0
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 16
+    name: Linux (Editor)
+    defaultModule: 2
+    module: 2
+    inputSelectionMethod: 0
+    position: 0
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 17
+    name: Web Player
+    defaultModule: 8
+    module: 8
+    inputSelectionMethod: 0
+    position: 0
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 1
+    unityVideoSource: 1
+  configsForStereoSecondInput:
+  - platform: 7
+    name: Windows (Editor)
+    defaultModule: 7
+    module: 7
+    inputSelectionMethod: 4
+    position: 0
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 0
+    name: mac OS (Editor)
+    defaultModule: 5
+    module: 5
+    inputSelectionMethod: 4
+    position: 8
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 0
+    height: 0
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 2
+    name: Windows (Player)
+    defaultModule: 7
+    module: 7
+    inputSelectionMethod: 1
+    position: 0
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 1
+    name: mac OS (Player)
+    defaultModule: 5
+    module: 5
+    inputSelectionMethod: 1
+    position: 8
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 0
+    height: 0
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 11
+    name: Android
+    defaultModule: 6
+    module: 6
+    inputSelectionMethod: 1
+    position: 16
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 1280
+    height: 720
+    AVFoundationPreset: 0
+    sizePreference: 3
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 8
+    name: iOS
+    defaultModule: 5
+    module: 5
+    inputSelectionMethod: 1
+    position: 16
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 0
+    height: 0
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 13
+    name: Linux (Player)
+    defaultModule: 2
+    module: 2
+    inputSelectionMethod: 1
+    position: 0
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 16
+    name: Linux (Editor)
+    defaultModule: 2
+    module: 2
+    inputSelectionMethod: 1
+    position: 0
+    index: 1
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 0
+    unityVideoSource: 0
+  - platform: 17
+    name: Web Player
+    defaultModule: 8
+    module: 8
+    inputSelectionMethod: 0
+    position: 0
+    index: 0
+    VideoSourceInfoListOpenToken: 
+    width: 640
+    height: 480
+    AVFoundationPreset: 0
+    sizePreference: 0
+    isUsingManualConfig: 0
+    manualConfig: 
+    supportedUnityVideoSources: 0000000001000000
+    isUsingUnityVideoSource: 1
+    unityVideoSource: 1
+--- !u!114 &287483927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287483925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4ec33cee90c844ea1bcc2cd642033e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseNativeGLTexturingIfAvailable: 1
+  AllowNonRGBVideo: 1
+  QuitOnEscOrBack: 1
+  AutoStartAR: 1
+  videoCParamName0: 
+  VideoIsStereo: 0
+  transL2RName: transL2R
+  videoCParamName1: 
+  currentThresholdMode: 0
+  currentThreshold: 100
+  currentLabelingMode: 1
+  currentTemplateSize: 16
+  currentTemplateCountMax: 25
+  currentBorderSize: 0.25
+  currentPatternDetectionMode: 0
+  currentMatrixCodeType: 3
+  currentImageProcMode: 0
+  currentNFTMultiMode: 0
+  currentTwoDMaxMarkersToTrack: 1
+  currentTwoDThreaded: 1
+  currentLogLevel: 1
+  currentSquareMatrixModeAutocreateNewTrackables: 0
+  currentSquareMatrixModeAutocreateNewTrackablesDefaultWidth: 0.08
+  onVideoStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onVideoStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  onVideoFrame:
+    m_PersistentCalls:
+      m_Calls: []
+  onScreenGeometryChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  scrollPosition: {x: 0, y: 0}
+--- !u!114 &287483928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287483925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7a9cb6b9a04214287322502faa33bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &287483929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287483925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.99, y: 0.60057, z: -2.28667}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388535226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,408 +2930,6 @@ MonoBehaviour:
   sourceDevice: {fileID: 1432171018}
   targetDevice: {fileID: 1610439830}
   alignmentVariance: 0.02
---- !u!1 &1214210647
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1214210650}
-  - component: {fileID: 1214210649}
-  - component: {fileID: 1214210648}
-  m_Layer: 0
-  m_Name: ARToolkit
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1214210648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214210647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe4ec33cee90c844ea1bcc2cd642033e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseNativeGLTexturingIfAvailable: 1
-  AllowNonRGBVideo: 1
-  QuitOnEscOrBack: 1
-  AutoStartAR: 1
-  videoCParamName0: 
-  VideoIsStereo: 0
-  transL2RName: transL2R
-  videoCParamName1: 
-  currentThresholdMode: 0
-  currentThreshold: 100
-  currentLabelingMode: 1
-  currentTemplateSize: 16
-  currentTemplateCountMax: 25
-  currentBorderSize: 0.25
-  currentPatternDetectionMode: 0
-  currentMatrixCodeType: 3
-  currentImageProcMode: 0
-  currentNFTMultiMode: 0
-  currentTwoDMaxMarkersToTrack: 1
-  currentTwoDThreaded: 1
-  currentLogLevel: 1
-  currentSquareMatrixModeAutocreateNewTrackables: 0
-  currentSquareMatrixModeAutocreateNewTrackablesDefaultWidth: 0.08
-  onVideoStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onVideoStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  onVideoFrame:
-    m_PersistentCalls:
-      m_Calls: []
-  onScreenGeometryChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  scrollPosition: {x: 0, y: 0}
---- !u!114 &1214210649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214210647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aabcb9e1b2834681b717ff03624a181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arcontroller: {fileID: 0}
-  configs:
-  - platform: 7
-    name: Windows (Editor)
-    defaultModule: 7
-    module: 7
-    inputSelectionMethod: 4
-    position: 0
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 0
-    name: mac OS (Editor)
-    defaultModule: 5
-    module: 5
-    inputSelectionMethod: 4
-    position: 8
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 0
-    height: 0
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 2
-    name: Windows (Player)
-    defaultModule: 7
-    module: 7
-    inputSelectionMethod: 0
-    position: 0
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 1
-    name: mac OS (Player)
-    defaultModule: 5
-    module: 5
-    inputSelectionMethod: 0
-    position: 8
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 0
-    height: 0
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 11
-    name: Android
-    defaultModule: 6
-    module: 6
-    inputSelectionMethod: 0
-    position: 16
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 1280
-    height: 720
-    AVFoundationPreset: 0
-    sizePreference: 3
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 8
-    name: iOS
-    defaultModule: 5
-    module: 5
-    inputSelectionMethod: 0
-    position: 16
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 0
-    height: 0
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 13
-    name: Linux (Player)
-    defaultModule: 2
-    module: 2
-    inputSelectionMethod: 0
-    position: 0
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 16
-    name: Linux (Editor)
-    defaultModule: 2
-    module: 2
-    inputSelectionMethod: 0
-    position: 0
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 17
-    name: Web Player
-    defaultModule: 8
-    module: 8
-    inputSelectionMethod: 0
-    position: 0
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 1
-    unityVideoSource: 1
-  configsForStereoSecondInput:
-  - platform: 7
-    name: Windows (Editor)
-    defaultModule: 7
-    module: 7
-    inputSelectionMethod: 4
-    position: 0
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 0
-    name: mac OS (Editor)
-    defaultModule: 5
-    module: 5
-    inputSelectionMethod: 4
-    position: 8
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 0
-    height: 0
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 2
-    name: Windows (Player)
-    defaultModule: 7
-    module: 7
-    inputSelectionMethod: 1
-    position: 0
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 1
-    name: mac OS (Player)
-    defaultModule: 5
-    module: 5
-    inputSelectionMethod: 1
-    position: 8
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 0
-    height: 0
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 11
-    name: Android
-    defaultModule: 6
-    module: 6
-    inputSelectionMethod: 1
-    position: 16
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 1280
-    height: 720
-    AVFoundationPreset: 0
-    sizePreference: 3
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 8
-    name: iOS
-    defaultModule: 5
-    module: 5
-    inputSelectionMethod: 1
-    position: 16
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 0
-    height: 0
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 13
-    name: Linux (Player)
-    defaultModule: 2
-    module: 2
-    inputSelectionMethod: 1
-    position: 0
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 16
-    name: Linux (Editor)
-    defaultModule: 2
-    module: 2
-    inputSelectionMethod: 1
-    position: 0
-    index: 1
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 0
-    unityVideoSource: 0
-  - platform: 17
-    name: Web Player
-    defaultModule: 8
-    module: 8
-    inputSelectionMethod: 0
-    position: 0
-    index: 0
-    VideoSourceInfoListOpenToken: 
-    width: 640
-    height: 480
-    AVFoundationPreset: 0
-    sizePreference: 0
-    isUsingManualConfig: 0
-    manualConfig: 
-    supportedUnityVideoSources: 0000000001000000
-    isUsingUnityVideoSource: 1
-    unityVideoSource: 1
---- !u!4 &1214210650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214210647}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5551, y: 1.11273, z: -2.99}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1340374236
 GameObject:
   m_ObjectHideFlags: 0
@@ -9122,4 +9137,4 @@ SceneRoots:
   - {fileID: 2122698286}
   - {fileID: 1432171017}
   - {fileID: 1610439829}
-  - {fileID: 1214210650}
+  - {fileID: 287483929}
